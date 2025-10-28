@@ -11,6 +11,10 @@ from datetime import datetime, timedelta
 import json
 from face_analyzer import FaceAnalyzer
 from database import Database
+from flask import Flask, render_template
+import os
+
+app = Flask(__name__, template_folder='.', static_folder='.')
 
 # Конфигурация приложения
 app = Flask(__name__)
